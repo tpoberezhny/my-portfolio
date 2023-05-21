@@ -19,6 +19,7 @@ function Home() {
         <Cursor cursorColor="#7C3AED"/>
       </h1>
       <h2>I am Tim and now you will be shocked with my resume :</h2>
+      <button className={styles.hireMe}>Hire Me <img className={styles.hire} width={30} height={40} src="../../image/hire.svg" alt="Hire Me" /><img className={styles.hireHover} width={30} height={40} src="../../image/hireHover.svg" alt="Hire Me" /></button>
       </div>
       <img className={styles.homeImage} width={500} src="../../image/homeImage.png" alt="Main Photo" />  
     </div>
