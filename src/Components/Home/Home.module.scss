@@ -1,16 +1,34 @@
 .helloSection {
-  margin-top: 5rem; 
+  margin-top: 2rem;
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   h1 {
-    font-size: 45px;
-    font-weight: 700; 
+    font-size: 40px;
+    font-weight: 700;
   }
 
   h2 {
-    color: #9CA3AF;  
+    color: #9ca3af;
   }
 
   span {
-    color: #7C3AED; 
+    color: #7c3aed;
+  }
+}
+
+.homeImage {
+  width: 600px;
+}
+
+@media (max-width: 768px) {
+  .helloSection {
+    flex-direction: column;
+    padding: 0;
+
+    .homeImage {
+      width: 400px;
+    }
   }
 }

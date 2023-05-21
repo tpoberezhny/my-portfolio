@@ -11,14 +11,16 @@ function Home() {
 
   return (
     <div className={styles.helloSection}>
+      <div className= "information">
       <h1>Hello,</h1>
       <h1>
         I am
         <span> {text} </span>
         <Cursor cursorColor="#7C3AED"/>
       </h1>
-      <h2>I am Tim and now you will be shocked with my resume :)</h2>
-      <img src="../../image/homeImage.png" alt="Main Photo" />
+      <h2>I am Tim and now you will be shocked with my resume :</h2>
+      </div>
+      <img className={styles.homeImage} width={500} src="../../image/homeImage.png" alt="Main Photo" />  
     </div>
   );
 }
