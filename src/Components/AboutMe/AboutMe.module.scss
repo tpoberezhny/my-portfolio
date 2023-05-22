@@ -1,6 +1,5 @@
 .title {
   text-align: center;
-  position: absolute;
   background-image: url("../../../public/image/wave.svg");
   background-size: cover;
 
@@ -8,7 +7,7 @@
     font-weight: 700;
     font-size: 55px;
     color: #fff;
-    padding-top: 200px;
+    padding-top: 220px;
 
     span {
       color: black;
@@ -19,14 +18,48 @@
     color: #fff;
     font-size: 25px;
     letter-spacing: 1.5px;
-    padding: 0 20rem;
-    margin-top: 6rem;
+    padding: 0 20rem 5rem 20rem;
+    margin-top: 4rem;
   }
 }
 
 .laptopImg {
   position: absolute;
   z-index: 1;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -90px;
+
+  .skill {
+    text-align: center;
+    width: 300px;
+    padding: 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+
+    img {
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .skillDesc {
+      margin-top: -10px;
+      font-size: 18px;
+      color: #6b7280;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: #7c3aed;
+      
+      .skillDesc {
+        color: #E5E7EB; 
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -44,5 +77,11 @@
   .laptopImg {
     width: 150px;
     margin-top: 210px;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -70px;
   }
 }
