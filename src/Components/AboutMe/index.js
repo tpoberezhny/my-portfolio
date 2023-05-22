@@ -4,31 +4,33 @@ import styles from "./AboutMe.module.scss";
 function AboutMe(props) {
   console.log(props.skills);
   return (
-    <div className="aboutMeSection">
-      <img
-        className={styles.laptopImg}
-        src="../../image/laptop.png"
-        alt="Laptop Image"
-      />
+    <div className="aboutMeSection" id="aboutMe">
+        <img
+          className={styles.laptopImg}
+          src="../../image/laptop.png"
+          alt="Laptop Image"
+        />
       <div className={styles.title}>
         <h1>
           About <span>Me</span>
         </h1>
         <h2 className="desription">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum
-          dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit
-          amet, consectetuer adipiscing elit.
+          Hello! My name is Tim, and I'm a Front End developer. I am
+          passionately dedicated to creating modern, efficient, and visually
+          appealing user interfaces. In my work, I strive for continuous
+          improvement and staying up-to-date with the latest technological
+          trends.
         </h2>
       </div>
 
       <div className={styles.skills}>
-          {props.skills.map((item) => (
-            <div className={styles.skill}>
-              <img width={300} height={300} src={item.imageUrl} />
-              <h2>{item.title}</h2>
-              <h2 className={styles.skillDesc}>{item.description}</h2>
-            </div>
-          ))}
+        {props.skills.map((item) => (
+          <div className={styles.skill}>
+            <img width={300} height={300} src={item.imageUrl} />
+            <h2>{item.title}</h2>
+            <h2 className={styles.skillDesc}>{item.description}</h2>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -3,7 +3,9 @@ import styles from './Projects.module.scss'
 
 function Projects() {
   return (
-    Projects
+    <div className='gg'>
+      asd
+    </div>
   );
 }
 
