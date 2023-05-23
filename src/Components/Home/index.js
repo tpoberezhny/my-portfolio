@@ -1,5 +1,6 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { Link } from "react-scroll";
 import styles from "./Home.module.scss";
 
 function Home() {
@@ -11,7 +12,7 @@ function Home() {
 
   return (
     <div className={styles.helloSection} id="home">
-      <div className="information">
+      <div className={styles.information}>
         <h1>Hello,</h1>
         <h1>
           I am
@@ -19,23 +20,30 @@ function Home() {
           <Cursor cursorColor="#7C3AED" />
         </h1>
         <h2>I am Tim and now you will be shocked with my resume :</h2>
-        <button className={styles.hireMe}>
-          Hire Me{" "}
-          <img
-            className={styles.hire}
-            width={30}
-            height={40}
-            src="../../image/hire.svg"
-            alt="Hire Me"
-          />
-          <img
-            className={styles.hireHover}
-            width={30}
-            height={40}
-            src="../../image/hireHover.svg"
-            alt="Hire Me"
-          />
-        </button>
+        <Link
+          to="contactMe"
+          spy={true}
+          smooth={true}
+          duration={1000}
+        >
+          <button className={styles.hireMe}>
+            Hire Me{" "}
+            <img
+              className={styles.hire}
+              width={30}
+              height={40}
+              src="../../image/hire.svg"
+              alt="Hire Me"
+            />
+            <img
+              className={styles.hireHover}
+              width={30}
+              height={40}
+              src="../../image/hireHover.svg"
+              alt="Hire Me"
+            />
+          </button>
+        </Link>
       </div>
       <img
         className={styles.homeImage}

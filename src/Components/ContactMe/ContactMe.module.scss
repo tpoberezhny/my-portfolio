@@ -1,0 +1,62 @@
+.contactMeSection {
+  margin-top: 100px;
+}
+
+.title {
+  text-align: center;
+}
+
+.contactForm {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactInput {
+  margin-top: 100px;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 400px;
+    padding: 20px;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 25px;
+  }
+
+  .message {
+    input {
+      height: 100px;
+    }
+  }
+
+  .submitBtn {
+    margin-top: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color:  #b76fff24;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contactImg {
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .contactInput {
+    z-index: 1;
+    input {
+      width: auto;
+    }
+  }
+}

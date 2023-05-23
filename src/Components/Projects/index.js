@@ -10,8 +10,8 @@ function Projects(props) {
         </h1>
       </div>
       <div className={styles.projectList}>
-        {props.projects.map((item) => (
-          <div className={styles.project}>
+        {props.projects.map((item, index) => (
+          <div key={index} className={styles.project}>
             <img
               width={300}
               height={300}

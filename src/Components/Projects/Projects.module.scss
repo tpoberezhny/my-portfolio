@@ -1,10 +1,7 @@
 .title {
   margin-top: 100px;
   text-align: center;
-
-  span {
-    color: #7c3aed;
-  }
+  border-top: 1px solid rgba(27, 33, 14, 0.133);
 }
 
 .projectList {
@@ -100,7 +97,8 @@
 
 @media (max-width: 768px) {
   .projectList{
-    .broject {
+    .project {
+      margin: 15px;
       button {
         display: flex;
       }

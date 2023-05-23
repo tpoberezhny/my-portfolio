@@ -24,8 +24,8 @@ function AboutMe({ skills }) {
       </div>
 
       <div className={styles.skills}>
-        {skills.map((item) => (
-          <div className={styles.skill}>
+        {skills.map((item, index) => (
+          <div key={index} className={styles.skill}>
                 <img
                   width={300}
                   height={300}

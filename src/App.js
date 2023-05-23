@@ -38,6 +38,7 @@ function App() {
       <Home />
       <AboutMe skills={skills} />
       <Projects projects={projects}/>
+      <ContactMe />
     </div>
   );
 }

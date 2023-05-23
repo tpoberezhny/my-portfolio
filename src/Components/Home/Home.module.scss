@@ -63,8 +63,15 @@
     flex-direction: column;
     padding: 0;
 
+    .information {
+      z-index: 1;
+    }
+
     .homeImage {
       width: 400px;
+      height: 600px;
+      object-fit: cover;
+      margin-top: -200px;
     }
   }
 }
