@@ -31,6 +31,17 @@ function Projects(props) {
                 />
               </button>
             </form>
+            <form action={item.demoLink} target="_blank">
+              <button className={styles.demoLink}>
+                Demo{" "}
+                <img
+                  width={30}
+                  height={30}
+                  src="../../image/demo.svg"
+                  alt="Demo"
+                />
+              </button>
+            </form>
           </div>
         ))}
       </div>
