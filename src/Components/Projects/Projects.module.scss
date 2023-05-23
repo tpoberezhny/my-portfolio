@@ -1,3 +1,77 @@
-.asd {
-  width: 100;
+.title {
+  margin-top: 100px;
+  text-align: center;
+
+  span {
+    color: #7c3aed;
+  }
+}
+
+.projectList {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+
+  .project {
+    text-align: center;
+    width: 300px;
+    padding: 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    background-color: #b76fff24;
+    margin: 50px 25px;
+
+    img {
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .projectDesc {
+      margin-top: -10px;
+      font-size: 18px;
+      color: #6b7280;
+      text-align: justify;
+      letter-spacing: 1px;
+    }
+
+    button {
+      border-radius: 15px;
+      display: none;
+    }
+
+    &:hover {
+      background-color: #7c3aed;
+      color: #fff;
+      position: relative;
+
+      button {
+        position: absolute;
+        z-index: 5;
+        top: 43%;
+        left: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+        border: 0;
+
+        img {
+          padding-left: 10px;
+        }
+      }
+
+      img {
+        opacity: 0.2;
+      }
+
+      .projectDesc {
+        color: #e5e7eb;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
 }

@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./AboutMe.module.scss";
 
 function AboutMe(props) {
-  console.log(props.skills);
   return (
     <div className="aboutMeSection" id="aboutMe">
         <img
@@ -26,7 +25,7 @@ function AboutMe(props) {
       <div className={styles.skills}>
         {props.skills.map((item) => (
           <div className={styles.skill}>
-            <img width={300} height={300} src={item.imageUrl} />
+            <img width={300} height={300} src={item.imageUrl}  alt="Image of JS/REACT/REDUX"/>
             <h2>{item.title}</h2>
             <h2 className={styles.skillDesc}>{item.description}</h2>
           </div>
