@@ -1,7 +1,11 @@
 import React from "react";
+import styles from "./Home.module.scss";
+
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Link } from "react-scroll";
-import styles from "./Home.module.scss";
+
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 function Home() {
   const [text] = useTypewriter({
@@ -12,7 +16,13 @@ function Home() {
 
   return (
     <div className={styles.helloSection} id="home">
-      <div className={styles.information}>
+      <motion.div
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+        className={styles.information}
+      >
         <h1>Hello,</h1>
         <h1>
           I am
@@ -20,12 +30,7 @@ function Home() {
           <Cursor cursorColor="#7C3AED" />
         </h1>
         <h2>I am Tim and now you will be shocked with my resume :</h2>
-        <Link
-          to="contactMe"
-          spy={true}
-          smooth={true}
-          duration={1000}
-        >
+        <Link to="contactMe" spy={true} smooth={true} duration={1000}>
           <button className={styles.hireMe}>
             Hire Me{" "}
             <img
@@ -44,13 +49,20 @@ function Home() {
             />
           </button>
         </Link>
-      </div>
-      <img
-        className={styles.homeImage}
-        width={500}
-        src="../../image/homeImage.png"
-        alt="Main Photo"
-      />
+      </motion.div>
+      <motion.div
+        variants={fadeIn("left", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+      >
+        <img
+          className={styles.homeImage}
+          width={500}
+          src="../../image/homeImage.png"
+          alt="Main Photo"
+        />
+      </motion.div>
     </div>
   );
 }
