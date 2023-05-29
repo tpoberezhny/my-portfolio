@@ -4,9 +4,6 @@ import styles from "./Home.module.scss";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Link } from "react-scroll";
 
-import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
-
 function Home() {
   const [text] = useTypewriter({
     words: ["Tim", "FrontEnd Dev"],
@@ -16,13 +13,7 @@ function Home() {
 
   return (
     <div className={styles.helloSection} id="home">
-      <motion.div
-        variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.2 }}
-        className={styles.information}
-      >
+      <div className={styles.information}>
         <h1>Hello,</h1>
         <h1>
           I am
@@ -49,20 +40,15 @@ function Home() {
             />
           </button>
         </Link>
-      </motion.div>
-      <motion.div
-        variants={fadeIn("left", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.2 }}
-      >
+      </div>
+      <div>
         <img
           className={styles.homeImage}
           width={500}
           src="../../image/homeImage.png"
           alt="Main Photo"
         />
-      </motion.div>
+      </div>
     </div>
   );
 }
