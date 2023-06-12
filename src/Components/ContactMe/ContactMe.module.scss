@@ -31,7 +31,7 @@
   }
 
   .messageInput {
-      padding-bottom: 80px;
+    padding-bottom: 80px;
   }
 
   .submitBtn {
@@ -44,7 +44,7 @@
     border: 2px solid;
 
     &:hover {
-      background-color:  #b76fff24;
+      background-color: #b76fff24;
     }
   }
 }
@@ -60,8 +60,15 @@
 
   .contactInput {
     z-index: 1;
+    align-items: center;
     input {
-      width: auto;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+    }
+
+    .submitBtn {
+      width: 300px;
     }
   }
 }

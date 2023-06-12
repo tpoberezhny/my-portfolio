@@ -41,7 +41,7 @@ function ContactMe() {
           <img
             width={650}
             height={600}
-            src="../../image/contactMe.png"
+            src="image/contactMe.png"
             alt="Meditation Boy"
           ></img>
         </motion.div>

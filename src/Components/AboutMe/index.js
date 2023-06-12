@@ -6,7 +6,7 @@ function AboutMe({ skills }) {
     <div className="aboutMeSection" id="aboutMe">
       <img
         className={styles.laptopImg}
-        src="../../image/laptop.png"
+        src="image/laptop.png"
         alt="Laptop Image"
       />
       <div className={styles.title}>

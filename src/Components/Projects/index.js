@@ -26,7 +26,7 @@ function Projects(props) {
                 <img
                   width={30}
                   height={30}
-                  src="../../image/github.svg"
+                  src="image/github.svg"
                   alt="Git Gub Image"
                 />
               </button>
@@ -37,7 +37,7 @@ function Projects(props) {
                 <img
                   width={30}
                   height={30}
-                  src="../../image/demo.svg"
+                  src="image/demo.svg"
                   alt="Demo"
                 />
               </button>

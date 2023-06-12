@@ -20,7 +20,7 @@ function Home() {
           <span> {text} </span>
           <Cursor cursorColor="#7C3AED" />
         </h1>
-        <h2>I am Tim and now you will be shocked with my resume :</h2>
+        <h2>I am Tim, passionate Front-End React Developer. Based in Prague <img src="image/pin.svg" width={30} height={30} alt="Pin"/></h2>
         <Link to="contactMe" spy={true} smooth={true} duration={1000}>
           <button className={styles.hireMe}>
             Hire Me{" "}
@@ -28,14 +28,14 @@ function Home() {
               className={styles.hire}
               width={30}
               height={40}
-              src="../../image/hire.svg"
+              src="image/hire.svg"
               alt="Hire Me"
             />
             <img
               className={styles.hireHover}
               width={30}
               height={40}
-              src="../../image/hireHover.svg"
+              src="image/hireHover.svg"
               alt="Hire Me"
             />
           </button>
@@ -45,9 +45,10 @@ function Home() {
         <img
           className={styles.homeImage}
           width={500}
-          src="../../image/homeImage.png"
-          alt="Main Photo"
+          src="image/homeImage.png"
+          alt="Boy with laptop smiling"
         />
+        <img className={styles.mobileHomeImage} src="image/homeMobileImage.png" alt="Mobile version of me"/>
       </div>
     </div>
   );

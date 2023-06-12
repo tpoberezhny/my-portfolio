@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <header>
       <div className={styles.headerLeft}>
-        <img width={80} height={80} src="../../image/logo.svg" alt="Logo" />
+        <img width={80} height={80} src="image/logo.svg" alt="Logo" />
       </div>
       <div className={styles.headerRight}>
         <ul className={styles.menu}>
@@ -39,7 +39,7 @@ function NavBar() {
             onClick={() => setToggle(true)}
             width={30}
             height={30}
-            src="../../image/menu-btn.svg"
+            src="image/menu-btn.svg"
             alt="Menu Button"
           />
         ) : (
@@ -48,7 +48,7 @@ function NavBar() {
             onClick={() => setToggle(false)}
             width={20}
             height={20}
-            src="../../image/close-btn.svg"
+            src="image/close-btn.svg"
             alt="Close Button"
           />
         )}
