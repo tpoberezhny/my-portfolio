@@ -3,6 +3,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .headerRight {
@@ -56,6 +59,7 @@ header {
   header {
     padding: 0 30px;
     border-bottom: 1px solid rgba(27, 33, 14, 0.133);
+    background-color: #f0f0f8;
   }
 
   .headerLeft {

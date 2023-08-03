@@ -72,19 +72,15 @@
     }
 
     .homeImage {
-      width: 400px;
-      height: 600px;
-      object-fit: cover;
-      margin-top: -170px;
       display: none;
     }
     .mobileHomeImage {
       display: flex;
-      height: 350px;
-      margin-top: -100px;
+      height: 500px;
       margin-left: 70px;
-      object-fit: fill;
-      width: 300px;
+      margin-top: -100px;
+      object-fit: cover;
+      max-width: 300px;
     }
   }
 }
