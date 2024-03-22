@@ -15,10 +15,10 @@ function App() {
     async function fetchData() {
       try {
         const skillsResponse = await axios.get(
-          "https://646aa2107d3c1cae4ce2b010.mockapi.io/skills"
+          "https://65fdc1b8b2a18489b385620d.mockapi.io/api/tima/skills"
         );
         const projectsResponse = await axios.get(
-          "https://646aa2107d3c1cae4ce2b010.mockapi.io/projects"
+          "https://65fdc1b8b2a18489b385620d.mockapi.io/api/tima/projects"
         );
 
         setSkills(skillsResponse.data);

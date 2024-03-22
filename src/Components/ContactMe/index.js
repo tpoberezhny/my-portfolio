@@ -15,7 +15,7 @@ function ContactMe() {
   } = useForm({ mode: "onBlur" });
 
   const onSubmit = (data) => {
-    Axios.post("https://646aa2107d3c1cae4ce2b010.mockapi.io/message", {
+    Axios.post("https://65fdc1b8b2a18489b385620d.mockapi.io/api/tima/message", {
       name: data.firstName,
       email: data.email,
       message: data.message,
