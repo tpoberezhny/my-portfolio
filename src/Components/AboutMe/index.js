@@ -14,25 +14,26 @@ function AboutMe({ skills }) {
           About <span>Me</span>
         </h1>
         <h2 className="desription">
-          Hello! My name is Tim, and I'm a Front End developer. I am
-          passionately dedicated to creating modern, efficient, and visually
-          appealing user interfaces. In my work, I strive for continuous
-          improvement and staying up-to-date with the latest technological
-          trends.
+          Hello! My name is Tim, and I'm a Front End developer with a passion
+          for crafting modern, efficient, and visually appealing user
+          interfaces. I strive for continuous improvement and keep up with the
+          latest technological trends. Additionally, I possess strong skills in
+          UI/UX design and have knowledge of back end development, rounding out
+          my capabilities for comprehensive web development projects.
         </h2>
       </div>
 
       <div className={styles.skills}>
         {skills.map((item, index) => (
           <div key={index} className={styles.skill}>
-                <img
-                  width={300}
-                  height={300}
-                  src={item.imageUrl}
-                  alt="Image of JS/REACT/REDUX"
-                />
-                <h2>{item.title}</h2>
-                <h2 className={styles.skillDesc}>{item.description}</h2>
+            <img
+              width={300}
+              height={300}
+              src={item.imageUrl}
+              alt="Image of JS/REACT/REDUX"
+            />
+            <h2>{item.title}</h2>
+            <h2 className={styles.skillDesc}>{item.description}</h2>
           </div>
         ))}
       </div>
