@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 
 function Home() {
   const [text] = useTypewriter({
-    words: ["Tim", "FrontEnd Dev"],
+    words: ["Tim", "FrontEnd Dev", "UI/UX Designer"],
     loop: {},
     deleteSpeed: 80,
   });
@@ -20,7 +20,7 @@ function Home() {
           <span> {text} </span>
           <Cursor cursorColor="#7C3AED" />
         </h1>
-        <h2>I am Tim, passionate Front-End React Developer. Based in Prague <img src="image/pin.svg" width={30} height={30} alt="Pin"/></h2>
+        <h2>I am Tim, passionate Front-End Developer | UI/UX Designer. Based in Prague <img src="image/pin.svg" width={30} height={30} alt="Pin"/></h2>
         <Link to="contactMe" spy={true} smooth={true} duration={1000}>
           <button className={styles.hireMe}>
             Hire Me{" "}
