@@ -49,7 +49,10 @@
       font-size: 18px;
       color: #6b7280;
       text-align: justify;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
+      text-align-last: left;
+      hyphens: auto;
+      line-height: 25px;
     }
 
     &:hover {
