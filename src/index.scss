@@ -44,3 +44,15 @@ ul {
 li {
   list-style-type: none;
 }
+
+#cursor-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  position: fixed; 
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  will-change: transform;
+}

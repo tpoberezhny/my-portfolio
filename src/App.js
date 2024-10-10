@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 
 import NavBar from "./Components/NavBar";
 import Home from "./Components/Home";
@@ -21,6 +20,43 @@ function App() {
     setSkills(skillsData);
     setProjects(projectsData);
     setDesignProjects(designProjectsData);
+  }, []);
+
+  useEffect(() => {
+    const dot = document.createElement("div");
+    dot.id = "cursor-dot";
+    document.body.appendChild(dot);
+  
+    let dotX = 0;
+    let dotY = 0;
+    let mouseX = 0;
+    let mouseY = 0;
+  
+    const handleMouseMove = (event) => {
+      mouseX = event.clientX;
+      mouseY = event.clientY;
+    };
+  
+    const animateDot = () => {
+      dotX += (mouseX - dotX) * 0.21;
+      dotY += (mouseY - dotY) * 0.21;
+  
+      if (window.innerWidth > 1920) {
+        dot.style.transform = `translate3d(${dotX - 132.5}px, ${dotY - 2}px, 0)`;
+      } else {
+        dot.style.transform = `translate3d(${dotX}px, ${dotY}px, 0)`;
+      }
+  
+      requestAnimationFrame(animateDot);
+    };
+  
+    document.addEventListener("mousemove", handleMouseMove);
+    requestAnimationFrame(animateDot);
+  
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.body.removeChild(dot);
+    };
   }, []);
 
   return (
