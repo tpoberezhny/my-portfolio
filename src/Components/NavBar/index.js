@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <header>
       <div className={styles.headerLeft}>
-        <img width={80} height={80} src="image/logo.svg" alt="Logo" />
+        <img width={60} height={55} src="image/logo.svg" alt="Logo" />
       </div>
       <div className={styles.headerRight}>
         <ul className={styles.menu}>
