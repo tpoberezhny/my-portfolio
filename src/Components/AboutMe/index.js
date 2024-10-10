@@ -14,7 +14,7 @@ function AboutMe({ skills }) {
           About <span>Me</span>
         </h1>
         <h2 className="desription">
-          Hello! My name is Tim, and I'm a Front End developer | UI-UX Designer with a passion
+          Hello! My name is Tim, and I'm a Full-Stack Developer | UI-UX Designer with a passion
           for crafting modern, efficient, and visually appealing user
           interfaces. I strive for continuous improvement and keep up with the
           latest technological trends. Additionally, I possess strong skills in
